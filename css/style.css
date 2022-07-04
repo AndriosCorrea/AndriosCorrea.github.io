@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Tiro+Devanagari+Marathi&display=swap');
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+  
+  
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+main, body{
+    background-color: #171717;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    border-bottom: white solid 0.1em;
+   
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    border-bottom: white solid 0.1em;
+    background-color: #171717;
+   
+}
+#header .scrollHide{
+    opacity: 0;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    
+}
+.menu-style{
+   font-size: larger;
+   font-weight: bold;
+   transition: font-size 0.5s;
+
+
+   
+}
+.menu-style:hover{
+    font-size:30px;
+    color: rgb(184, 8, 8);
+}
+header nav .menu{
+    display:none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin-right: 50px;
+}
+.login .menu-style-login {
+    width: 150px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(184, 8, 8);
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    color: white;
+    cursor:pointer;
+    
+    
+    
+    
+}
+.login .menu-style-login:hover{
+
+background-color:rgb(75, 3, 3) ;
+}
+.cadastro-botao{
+    text-decoration: none;
+    color:white;
+}
+
+@media (min-width:820px) {
+     header nav .menu{
+        display: flex;
+        margin-right: 50px;
+        font-size: 20px;
+     }
+     header nav .menu-hamburguer{
+        display:none;
+     }
+    header{
+        justify-content: space-between;
+       
+        
+    }
+  
+  
+    .login .menu-style-login {
+        width: 350px;
+        padding: 15px;
+        text-decoration: none;
+        background-color: rgb(184, 8, 8);
+        border: none;
+        border-radius: 5px;
+        font-size: 21px;
+        color: white;
+        cursor:pointer
+        
+        
+    }
+   
+}
+
+.logo{
+width: 100px;
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+  
+}
+.p-texto{
+    text-shadow:0.2em 0.1em 0.2em #231f20;
+}
+.text-banner{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   line-height: 37px;
+   
+}
+.button-banner{
+    width:300px;
+    background-color:rgb(184, 8, 8);
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    cursor:pointer
+}
+.banner-botao{
+    text-decoration: none;
+    color: white;
+}
+
+.banner{
+    background-image: url(/img/3d-female-looking-creature-foggy-forest.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items:center; 
+    justify-content: space-around;
+    flex-direction: column; 
+    background-attachment: scroll;
+    margin-bottom: 10px;
+}
+.text-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-end;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 50px;
+}
+@media (min-width:820px){
+    .banner{
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        font-size: 80px;
+        text-align: center;
+        font-weight: 900;
+        line-height: 80px;
+    }
+    .p-texto{
+        font-size: 40px;
+       
+         
+    }
+    .banner{
+         justify-content:center;
+         align-items: flex-start;
+         
+       
+    }
+    .text-banner{
+        margin: 80px;
+        
+       
+    }
+    .text-home{
+        display:none;
+       
+    }
+    .button-banner{
+        width: 400px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+        cursor:pointer
+      
+    }
+    .login{
+        font-weight:500;
+
+    }
+    
+}
+h3{
+    display: none;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.autores{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+   
+}
+@media (min-width:820px){
+    .autores{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+    }
+   h3{
+    display: block;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+   }
+}
+.card-autores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    width:5rem;
+    margin-bottom: 10px;
+}
+.card-img-autor{
+    border-radius: 100%;
+    width: 10rem;
+    
+}
+.autor-body{
+    text-align: center;
+    color: white;
+   
+}
+.autor-text{
+    text-align: justify;
+    font-size: large;
+}
+
+@media (min-width:820px){
+    .autores{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        gap:0px;
+        margin-bottom: 20px;
+    }
+    .card-autores{
+        width:20rem;
+    }
+}
+.autor-button{
+    width: 150px;
+    text-decoration: none;
+    color: #171717;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(184, 8, 8);
+    padding: 5px;
+    margin-top: 10px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+   
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    gap: 10px;
+}
+
+.card-body{
+    text-align: center;
+    color: white;
+}
+.card-text{
+    text-align: justify;
+}
+@media (min-width:820px){
+    .cards{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        gap:0px;
+        margin-bottom: 20px;
+    }
+    .card{
+        width:20rem;
+    }
+    .links{
+        font-size: large;
+        font-weight: bold;
+        text-align: start;
+    }
+    h5{
+        font-size: 20px;
+    }
+    .card-text{
+        font-size: large;
+        text-align: start;
+    }
+}
+.book-button{
+    width: 150px;
+    text-decoration: none;
+    color: #171717;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(184, 8, 8);
+    padding: 7px;
+    margin-top: 10px;
+}
+.links{
+    text-decoration: none;
+    color: white;
+}
+
+.cadastro{
+    background-color:rgb(184, 8, 8) ;
+    width: 100%;
+    height: 230px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+h2, h4{
+    text-align: center;
+}
+#h2-titulo{
+    font-size: 30px;
+    -webkit-transform:scale(1.7,2) ;
+    margin-bottom: 10px;
+
+}
+
+.formulario{
+    display: flex;
+    justify-content:center;
+    flex-flow: row;
+    flex-wrap:wrap;
+    align-content:space-between;
+    gap:5px;
+    
+}
+.input-cadastro{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.button-cadastro{
+    
+    border: 1px solid white;
+    padding:10px;
+    width: 200px;
+    border-radius: 7px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+@media (min-width:820px){
+    .cadastro{
+        background-color:rgb(184, 8, 8) ;
+        width: 100%;
+        height: 430px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+    }
+    h2, h4{
+        text-align: center;
+    }
+     h4{
+        font-size: 50px;
+    }
+    #h2-titulo{
+        font-size: 80px;
+        -webkit-transform:scale(1.7,2) ;
+        margin-bottom: 10px;
+    
+    }
+    
+    .formulario{
+        display: flex;
+        justify-content:center;
+        flex-flow: row;
+        align-content:space-between;
+        gap: 20px;
+        
+    }
+    .input-cadastro{
+        padding: 20px;
+        border: none;
+        border-radius: 5px;
+        width:500px;
+    }
+    .button-cadastro{
+        
+        border: 1px solid white;
+        padding:20px;
+        width: 200px;
+        border-radius: 7px;
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:600px;
+    background-color: #231f20;
+    
+    
+}
+.nome-aluno{
+    margin-top: 50px;
+    color: white;
+    font-size: 20px;
+}
+.imagem-contato{
+    width:60%;
+    filter: grayscale();
+}
+    
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+   
+    
+    
+}
+a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;  
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#231f20 ;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    gap:20px;
+    
+}
+.texto-rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.texto-rodape .paragrafo-rodape{
+    align-items: center;
+}
+.school-site{
+    text-decoration: none;
+    color:white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    background-color: blue;
+    text-align: center;
+    width: 50%;
+}
+.paragrafo-rodape2{
+    display: none;
+}
+@media (min-width:820px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width:100%;
+        height:700px;
+        background-color: #231f20;
+        
+        
+    }
+    .nome-aluno{
+        margin-top: 50px;
+        color: white;
+        font-size: 30px;
+    }
+    .imagem-contato{
+        width:60%;
+        filter: grayscale();
+    }
+        
+    
+    .contato {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap:80px;
+        
+        
+    }
+   
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: black;
+        width: 100%;
+        height: 150px;
+        gap:20px;
+        
+    }
+    .texto-rodape{
+        display: none;
+        
+        
+        
+    }
+    .paragrafo-rodape2{
+        display: flex;
+        font-size: 17px;
+    }
+    .texto-rodape2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .texto-rodape .paragrafo-rodape{
+        align-items: center;
+    }
+    .school-site{
+        text-decoration: none;
+        color:white;
+        padding: 10px 20px 10px 20px;
+        border-radius: 5px;
+        background-color: blue;
+        text-align: center;
+        width: 30%;
+        font-size: 30px;
+    }
+}
